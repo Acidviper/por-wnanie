@@ -184,6 +184,7 @@ if(EQUAL(EXTDB_SETTING(getNumber,"HC_Enabled"),0)) then {
 life_attachment_point = "Land_HelipadEmpty_F" createVehicle [0,0,0];
 life_attachment_point setPosASL [0,0,0];
 life_attachment_point setVectorDirAndUp [[0,1,0], [0,0,1]];
-
+//market
+[] execVM "\life_server\Functions\DynMarket\fn_config.sqf";
 // Sharing the point of attachment with all players.
 publicVariable "life_attachment_point";
