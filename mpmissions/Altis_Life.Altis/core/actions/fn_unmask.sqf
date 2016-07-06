@@ -13,4 +13,4 @@ if(!isPlayer _unit) exitWith {};
 _unit setVariable["masked",FALSE,TRUE];
 [player] remoteExecCall ["life_fnc_masked",_unit];
 [true,"blindfold",1] call life_fnc_handleInv;
-hint "Você o tirou sua máscara. Ele pode ver novamente.";
+hint "Założyłeś maskę.";

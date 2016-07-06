@@ -2,8 +2,8 @@ waitUntil {!isNull player && player isEqualTo player};
 if(player diarySubjectExists "controls") exitWith {};
 
 player createDiarySubject ["credits","Credits"];
-player createDiarySubject ["changelog","Change Log"];
-player createDiarySubject ["serverrules","General Rules"];
+player createDiarySubject ["changelog","Regulamin"];
+player createDiarySubject ["serverrules","Podstawowe zasady"];
 player createDiarySubject ["policerules","Police Procedures/Rules"];
 player createDiarySubject ["safezones","Safe Zones (No Killing)"];
 //player createDiarySubject ["civrules","Civilian Rules"];
@@ -27,64 +27,41 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"ArmaLife",
 				"
-					ArmaLife is a GitHub project which aims to update and keep adding new features to the original 'Altis Life RPG' by Tonic.<br/><br/>
+					ArmaLife to gra rp  'Altis Life RPG' by Tonic.<br/><br/>
 				"
 		]
 	];
 
 	player createDiaryRecord["changelog",
 		[
-			"Altis Life Change Log",
+			"Regulamin",
 				"
-					The official changelog can be found in ArmaLife github. https://git.io/vVkhe<br/><br/>
+					Regulamin znajdziecie na www.altisland.pl<br/><br/>
 
-					v4.4 release 3!<br/>
-					By: danielstuart14<br/>
-					Date: 31. May 2016<br/><br/>
-
-					v4.4 release 1!<br/>
-					by: danielstuart14<br/>
-					date: 12. February 2016<br/><br/>
-
-					v4.3 release 4!<br/>
-					by: danielstuart14<br/>
-					date: 31. January 2016<br/><br/>
-
-					v4.3 release 3!<br/>
-					by: danielstuart14<br/>
-					date: Not released<br/><br/>
-
-					v4.3 release 2!<br/>
-					by: danielstuart14<br/>
-					date: 22. January 2016<br/><br/>
-
-					v4.3 release 1!<br/>
-					by: danielstuart14<br/>
-					date: 19. January 2016<br/><br/>
 				"
 		]
 	];
 
 	player createDiaryRecord["changelog",
 		[
-			"Server Change Log",
+			"Teamspeak",
 				"
-					Adding new features to the server constantly is one of our main goals.<br/><br/>
+					Adres TS3 51.254.132.75.<br/><br/>
 				"
 		]
 	];
 
 		player createDiaryRecord ["serverrules",
 		[
-			"Exploits",
+			"Zasady",
 				"
-				These are considered exploits, and you will not be kicked, but banned.<br/><br/>
+				....<br/><br/>
 
-				1. Getting out of jail via any method other than paying bail or escaping via helicopter.<br/>
-				2. Killing yourself to get out of roleplay. Getting out of being tazed, restrained, arrested, jail, etc. If the log shows you got arrested, then you died, you will be banned. Do not pay bail and kill yourself for an easy ride home. Walk you lazy turd.<br/>
-				3. Duping items and/or money. If someone sends you an unobtainable amount of money right at the start of the game, report to an admin IMMEDIATELY and transfer said money to an admin. Do this ASAP or an admin could ban you if they see that much on you without question.<br/>
-				4. Using clearly hacked items. If a hacker comes in and spawns unobtainable items, you could be banned for using said items. Report the items to the admins immediately and stay away from them.<br/>
-				5. Abusing bugs or game mechanics for gain. Is there a replicating gun somewhere? Report it and leave it alone. If an admin catches you abusing the glitch, ban.<br/><br/>
+				1. .<br/>
+				2. .<br/>
+				3. .<br/>
+				4. .<br/>
+				5. .<br/><br/>
 				"
 		]
 	];
@@ -93,13 +70,13 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Safe Zones",
 				"
-					If bombing (bombing can be intentionally exploding a vehicle), robbing, or killing occurs around these or in these areas it is punishable by ban.<br/><br/>
+					.....<br/><br/>
 
-					Any vehicle spawn (shop or garage)<br/>
-					Any weapon shop<br/>
-					All Police HQs<br/>
-					Rebel Outposts<br/>
-					Donator Shops<br/><br/>
+					...<br/>
+					...<br/>
+					...<br/>
+					...<br/>
+					...<br/><br/>
 				"
 		]
 	];

@@ -10,7 +10,7 @@
 private["_dialog","_item","_craftSites","_site","_vehicle","_itemInfo","_oldItem","_newItem","_upp","_itemName","_ui","_progress","_pgText","_cP","_allMaterial","_matsNeed","_invSize","_handledItem","_itemFilter","_backpackOldItems","_weight","_nearCar","_vehicleCheck","_trunkCar","_trunk","_vehCheck","_invAmount","_weight"];
 disableSerialization;
 _dialog = findDisplay 666;
-if(!((player distance (getMarkerPos "CraftingArea1") < 50) OR  (player distance (getMarkerPos "CraftingArea2") < 50) OR  (player distance (getMarkerPos "CraftingArea3") < 50))) exitWith  {hint "How can I do this without the right tools? Go to a crafting zone";};
+if(!((player distance (getMarkerPos "CraftingArea1") < 50) OR  (player distance (getMarkerPos "CraftingArea2") < 50) OR  (player distance (getMarkerPos "CraftingArea3") < 50))) exitWith  {hint "Jak mogę to zrobić bez odpowiednich narzędzi? Przejdź do strefy Kraftu";};
 if((lbCurSel 669) isEqualTo -1) exitWith {hint localize "STR_ISTR_SelectItemFirst";};
 _item = lbData[669,(lbCurSel 669)];
 _nearCar = nearestobject[player,"LandVehicle"];

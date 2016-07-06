@@ -15,7 +15,7 @@ _dis = round((getPos life_dp_start) distance (getPos _dp));
 _price = round(1.7 * _dis);
 
 ["DeliverySucceeded",[format[(localize "STR_NOTF_Earned_1"),[_price] call life_fnc_numberText]]] call bis_fnc_showNotification;
-life_cur_task setTaskState "Succeeded";
+life_cur_task setTaskState "Sukces";
 player removeSimpleTask life_cur_task;
 ADD(CASH,_price);
 [0] call SOCK_fnc_updatePartial;

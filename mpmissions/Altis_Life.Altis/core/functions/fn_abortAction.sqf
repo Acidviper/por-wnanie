@@ -27,7 +27,7 @@ waitUntil {camCommitted _outroCam};
 cutText ["","BLACK",1];
  sleep 1;
  sleep 0.25;
-["<t size='1.3' color='#cc181e'>Undead Brasil Servidores</t><br/>Esperamos que tenha gostado do nosso servidor e esperamos tê-lo de volta!<br/><br/><br/><t size='1.1'>www.undeadbrasil.com</t>",0,0.2,10,0,0,8] spawn BIS_fnc_dynamicText;
+["<t size='1.3' color='#cc181e'>AltisLand Best</t><br/>Mamy nadzieje że miło spędziłeś czas. Zapraszamy ponownie!<br/><br/><br/><t size='1.1'>www.altisland.pl</t>",0,0.2,10,0,0,8] spawn BIS_fnc_dynamicText;
 sleep 4;
 0 fadeSound 1;
 0 fadeMusic 1;

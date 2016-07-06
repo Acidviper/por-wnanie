@@ -14,8 +14,8 @@ _unit = lbData [2406,lbCurSel 2406];
 _unit = call compile format["%1",_unit];
 _amount = lbData [2407,lbCurSel 2407];
 if(isNil "_unit") exitWith {};
-//if(side _unit == west) exitWith {hint "What are ya trying to do, start a police war? Dickhead." };
-//if(_unit == player) exitWith {hint "You can't make yourself wanted, dipshit";};
+//if(side _unit == west) exitWith {hint "Co robisz zaczynasz wojnę z Policją? Dickhead." };
+//if(_unit == player) exitWith {hint "Nie możesz zostać poszukiwanym";};
 if(isNull _unit) exitWith {};
 
 [1,"STR_Wanted_AddP",true,[_unit GVAR ["realname",name _unit],_amount,getPlayerUID _unit]] remoteExecCall ["life_fnc_broadcast",RCLIENT];

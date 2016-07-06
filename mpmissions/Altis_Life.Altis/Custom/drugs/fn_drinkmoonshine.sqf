@@ -4,7 +4,7 @@
 	author:[midgetgrimm] drinkypoo
 */
 closeDialog 0;
-hintSilent parseText format["BAC is now<br/> <t size='1.4'><t color='#FF0000'>%1</t></t> Percent",[life_drink] call life_fnc_numberText];
+hintSilent parseText format["Upojenie<br/> <t size='1.4'><t color='#FF0000'>%1</t></t> Procent",[life_drink] call life_fnc_numberText];
 sleep 4;
 "chromAbberation" ppEffectEnable true;
 "radialBlur" ppEffectEnable true;

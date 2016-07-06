@@ -55,7 +55,7 @@ class Life_FuelStat {
 
 		class FuelPrice: Life_RscTitle {
 			idc = 20322;
-			text = "Price:";
+			text = "Cena:";
 			x = 0.15;
 			y = 0.8;
 			w = 0.8;
@@ -90,7 +90,7 @@ class Life_FuelStat {
 
 		class refuelCar: Life_RscButtonMenu {
 			idc = 20309;
-			text = "Refuel";
+			text = "Zatankuj";
 			onButtonClick = "[] spawn life_fnc_FuelRefuelcar;";
 			x = 0.26 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.9 - (1 / 25);

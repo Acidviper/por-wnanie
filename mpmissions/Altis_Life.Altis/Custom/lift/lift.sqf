@@ -3,7 +3,7 @@ _vehCar = nearestObject [vehicle player, "Car"];
 _vehTank = nearestObject [vehicle player, "Tank"];
 _vehBoat = nearestObject [vehicle player, "Ship"];
 
-if((count crew _vehCar > 0)||(count crew _vehBoat > 0))exitwith{hint 'You can not pick up a vehicle while someone is inside it';};
+if((count crew _vehCar > 0)||(count crew _vehBoat > 0))exitwith{hint 'Nie można podrzucić pojazd, gdy ktoś jest w środku';};
 
 if((_vehCar in life_vehicles)||(_vehBoat in life_vehicles)) then 
 {

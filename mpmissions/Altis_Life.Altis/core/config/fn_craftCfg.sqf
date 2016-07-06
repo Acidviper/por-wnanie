@@ -12,7 +12,7 @@ private["_craft","_return","_craftSites"];
 if(!((player distance (getMarkerPos "CraftingArea1") < 50) OR  (player distance (getMarkerPos "CraftingArea2") < 50) OR  (player distance (getMarkerPos "CraftingArea3") < 50))) then  {
 	closeDialog 0;
 	_return = false;
-	hint "Voce precisa estar em uma area de craft!";
+	hint "Musisz być na terenie Kraftingu!";
 	} else {
 
 _craft = [_this,0,"",[""]] call BIS_fnc_param;

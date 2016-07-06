@@ -2,11 +2,11 @@
 /*
 	File: fn_adminMenu.sqf
 	Author: Bryan "Tonic" Boardwine
-
+	
 	Description:
-	Opens the admin menu and hides buttons based on life_adminlevel.
+	Opens the admin menu, sorry nothing special in here. Take a look for yourself.
 */
-private["_display","_list","_side","_godmode","_markers"];
+private["_display","_list","_side"];
 if(FETCH_CONST(life_adminlevel) < 1) exitWith {closeDialog 0;};
 
 disableSerialization;
@@ -30,14 +30,5 @@ lbClear _list;
 	_side = switch(side _x) do {case west: {"Cop"}; case civilian: {"Civ"}; case independent: {"Medic"}; default {"Unknown"};};
 	_list lbAdd format["%1 - %2", _x GVAR ["realname",name _x],_side];
 	_list lbSetdata [(lbSize _list)-1,str(_x)];
-} forEach playableUnits;
+} foreach playableUnits;
 if(FETCH_CONST(life_adminlevel) < 1) exitWith {closeDialog 0;};
-
-if (life_god) then {
-	_godmode = CONTROL(2900,2908);
-	_godmode ctrlSetTextColor [0, 255, 0, 1];	// green
-};
-if(life_markers) then {
-	_markers = CONTROL(2900,2910);
-	_markers ctrlSetTextColor [0, 255, 0, 1];	// green
-};

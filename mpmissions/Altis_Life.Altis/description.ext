@@ -105,7 +105,7 @@ class CfgSounds {
 	class wasted
 {
     name = "wasted";
-    sound[] = {"sounds\wasted.ogg", 1.2, 1};
+    sound[] = {"\sounds\wasted.ogg", 1.2, 1};
     titles[] = {};
 };
 
@@ -115,7 +115,14 @@ class CfgSounds {
 		sound[] = {"\sounds\nitro.ogg", 0.8, 1};
 		titles[] = {};
 	};
-
+    
+	class hebasound
+	{
+		name = "hebasound";
+		sound[] = {"\sounds\hebasound.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
 	class sVest
 	{
 		name = "sVest";

@@ -3,7 +3,7 @@
  Description: Placeables for the cop\medic sides.
 */
 disableSerialization;
-if (count life_bar_placey >= life_bar_limit) exitWith { hint "You've reached the limit of objects you can place."; };
+if (count life_bar_placey >= life_bar_limit) exitWith { hint "Osiągnięto limit obiektów."; };
 _display = findDisplay 20000;
 _placeables = _display displayCtrl 20001;
 _className = lbData[20001, lbCurSel (20001)];
@@ -26,4 +26,4 @@ waitUntil
     !life_barrier_active;
 };
 
-hint "Always clean up barriers if you have placed them, otherwise you will be held responsible if caught leaving them!";
+hint "Zawsze po akcji usuń barierki!";

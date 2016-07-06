@@ -3,7 +3,7 @@ private["_vehicle","_type","_time","_vehicleData","_upp","_ui","_progress","_pgT
 _vehicle = cursorTarget;
 _veh = typeOf _vehicle;
 
-if(!(_veh in["B_G_Offroad_01_armed_F","O_MRAP_02_hmg_F","B_Heli_Light_01_stripped_F","O_MRAP_02_F","B_Heli_Light_01_stripped_F"])) exitWith {hint "Voce nao pode destruir um carro se nao for ilegal";};
+if(!(_veh in["B_G_Offroad_01_armed_F","O_MRAP_02_hmg_F","B_Heli_Light_01_stripped_F","O_MRAP_02_F","B_Heli_Light_01_stripped_F"])) exitWith {hint "Nie można zniszczyć samochód, jeśli nie jest to niezgodne z prawem";};
 
 if(!((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship"))) exitWith {};
 if(player distance cursorTarget > 10) exitWith {};
@@ -12,9 +12,9 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 	_vehicleData = _vehicle getVariable["vehicle_info_owners",[]];
 	if(count _vehicleData isEqualTo 0) exitWith {deleteVehicle _vehicle};
   _vehicleName = getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName");
-[0,format["%1 seu %2 está sendo destruido pela polícia porque é um veículo ilegal.",(_vehicleData select 0) select 1,_vehicleName]] remoteExec ["life_fnc_broadcast",0];
+[0,format["%1 Twój %2 jest konfiskowany ponieważ jest nielegalny.",(_vehicleData select 0) select 1,_vehicleName]] remoteExec ["life_fnc_broadcast",0];
 	life_action_inUse = true;
-		_upp = "Destuindo veículo";
+		_upp = "Konfiskata pojazdu";
 	//Setup our progress bar.
 	disableSerialization;	5 cutRsc ["life_progress","PLAIN"];
 	_ui = uiNameSpace getVariable "life_progress";
@@ -33,7 +33,7 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 		if(!alive player) exitWith {};
 	};
 	5 cutText ["","PLAIN"];
-		if(player distance _vehicle > 10) exitWith {hint "Destruiçao cancelada.";
+		if(player distance _vehicle > 10) exitWith {hint "Pojazd skonfiskowany.";
  life_action_inUse = false;
 };
 if(!alive player) exitWith {life_action_inUse = false;
@@ -51,10 +51,10 @@ _type = getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName
 			case (_vehicle isKindOf "Air");
 };
 [player,_vehicle] remoteExec ["TON_fnc_chopShopSell"];
-		hint format["Voce destruiu %1's veículo, esteja ciente que foi por uma boa causa!",_type];
+		hint format["Skonfiskowany %1's należy pamiętać, że to dla dobra sprawy!",_type];
 [0,format["%1 destruiu %2's %3 veículo",name player,(_vehicleData select 0) select 1,_vehicleName]] remoteExec ["life_fnc_broadcast",0];
 	          } else {
-		hint "Destruiçao cancelada.";
+		hint "Konfiskata anulowana.";
 	};
 };
 life_action_inUse = false;

@@ -10,10 +10,10 @@ disableSerialization;
 private["_d","_e","_dialog","_myListbox","_selectedOffer","_id","_seller","_item","_value","_checkid","_cnt","_status","_online","_pid","_unit","_type","_amount","_diff","_uid","_caller","_handle","_tamount","_iCheck"];
 _dialog = findDisplay 15100;
 _myListbox = _dialog displayCtrl 15101;
-if (lbCurSel _myListbox < 0) exitWith {hint "Please select an Item";};
+if (lbCurSel _myListbox < 0) exitWith {hint "Proszę wybrać";};
 _selectedOffer = call compile (_myListbox lbData (lbCurSel _myListbox));
 
-if (!vAH_loaded) exitWith {hint "Auction house is busy at the moment, please try again in a short while!"};
+if (!vAH_loaded) exitWith {hint "Poczekaj chwilę!"};
 if (count _selectedOffer isEqualTo 1) exitWith {};
 
 _id = _selectedOffer select 0;
@@ -29,13 +29,13 @@ _online = false;
 _iCheck = true;
 
 _e = missionNamespace getVariable [format["ahItem_%1",_id],false];
-if (player getVariable["ahID",0] != _id && !_e) exitWith {hint "Someone may be buying or retrieving this item as we speak!";};
+if (player getVariable["ahID",0] != _id && !_e) exitWith {hint "Ktoś może kupić to!";};
 
-if (_seller isEqualTo _uid) exitWith {hint "You cannot purchase your own item idiot!";};
+if (_seller isEqualTo _uid) exitWith {hint "Nie możesz kupić swojego przedmiotu idioto!";};
 
 {_checkid = _x select 0;if (_checkid isEqualTo _id) then {_status = _x select 7};}forEach all_ah_items;
-if (_status != 0) exitWith {hint "This item has already been sold or expired!";}; //NOT FOR SALE ANYMORE
-if (TTPBANK < _value) exitWith {hint "You don't have enough cash in your bank account!";};
+if (_status != 0) exitWith {hint "Przedmiot został sprzedany albo aukcja wygasła!";}; //NOT FOR SALE ANYMORE
+if (TTPBANK < _value) exitWith {hint "Nie masz tyle pieniędzy!";};
 
 if (_type isEqualTo 0) then
 	{

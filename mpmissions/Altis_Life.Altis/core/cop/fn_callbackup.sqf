@@ -10,4 +10,4 @@ life_callBackup = false;
 	uiSleep 320;
 	life_callBackup = true;
 };
-hint format ["Backup has been called for you, %1",name player];
+hint format ["Wsparcie zostało wysłane, %1",name player];

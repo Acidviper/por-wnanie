@@ -9,17 +9,17 @@
 private ["_post","_num","_color","_action","_price","_smoke1","_smoke2","_light","_flare1","_flare2","_previousVol","_i","_camera","_heli","_jumpers","_post","_smokeOn"];
 _post = _this select 0;
 
-if(playerSide != civilian) exitWith {hint "You cannot skydive if you are on duty.";};
+if(playerSide != civilian) exitWith {hint "Nie można skakać jeśli jesteś na służbie.";};
 
 _price = 30000;
 
-if(CASH < _price) exitWith {hint "You do not have enough money";};
+if(CASH < _price) exitWith {hint "Nie masz wystarczająco pieniędzy";};
 
 _action = [
-	"Warning, skydiving will cost you 30 thousand dollars, continue?",
-	"Skydiving",
-	"Yes",
-	"No"
+	"Uwaga, skok kosztuje 30k kontynuować?",
+	"Skok",
+	"Tak",
+	"Nie"
 ] call BIS_fnc_guiMessage;
 
 if(_action) then {
@@ -209,5 +209,5 @@ if(_action) then {
 		deleteVehicle _heli;
 	};
 } else {
-	hint "Skydiving cancelled, maybe next time?";
+	hint "Skok odwołany może następnym razem?";
 };

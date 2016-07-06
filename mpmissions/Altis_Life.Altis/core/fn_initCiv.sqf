@@ -48,11 +48,11 @@ player setVariable["viprank",(FETCH_CONST(life_donorlevel)),true];
 //Pagamento VIP
 switch (FETCH_CONST(life_donorlevel)) do
 {
-	case 1: { life_paycheck = life_paycheck + 3000; };  //Bronze
-    case 2: { life_paycheck = life_paycheck + 5000; }; //Silver
-    case 3: { life_paycheck = life_paycheck + 8000; }; //Gold
-    case 4: { life_paycheck = life_paycheck + 10000; }; //Platinum
-    case 5: { life_paycheck = life_paycheck + 12000; };//Diamante
+	case 1: { life_paycheck = life_paycheck + 1000; };  //Bronze
+    case 2: { life_paycheck = life_paycheck + 2000; }; //Silver
+    case 3: { life_paycheck = life_paycheck + 3000; }; //Gold
+    case 4: { life_paycheck = life_paycheck + 5000; }; //Platinum
+    case 5: { life_paycheck = life_paycheck + 7000; };//Diamante
 	default { life_paycheck = life_paycheck };
 };
 

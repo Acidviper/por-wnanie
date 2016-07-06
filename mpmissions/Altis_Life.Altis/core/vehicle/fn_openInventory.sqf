@@ -2,7 +2,6 @@
 /*
 	File: fn_openInventory.sqf
 	Author: Bryan "Tonic" Boardwine
-
 	Description:
 	Starts the initialization of vehicle virtual inventory menu.
 */

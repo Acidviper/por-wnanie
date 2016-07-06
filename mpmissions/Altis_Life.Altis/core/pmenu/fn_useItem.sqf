@@ -85,13 +85,13 @@ switch (true) do {
 	};
 
 	case (EQUAL(_item,"blindfold")): {
-		if(playerSide in [independent]) exitWith {hint "Voce nao pode usar este item!"};
-		if(vehicle player != player) exitWith {hint "Voce nao pode usar este item dentro do veículo!"};
+		if(playerSide in [independent]) exitWith {hint "Nie można użyć tego elementu!"};
+		if(vehicle player != player) exitWith {hint "Nie można użyć tego elementu w pojezdzie!"};
 		_unit = cursorTarget;
 		if(isNull _unit) exitWith {};
-		if((player distance _unit > 3)) exitWith {hint "Voce está muito longe!";};
-		if(!(_unit getVariable "civrestrained")) exitWith {hint "A vítima deve estar algemada!";};
-		if((_unit getVariable "masked")) exitWith {hint "A vítima ja esta com o saco de sequestro!";};
+		if((player distance _unit > 3)) exitWith {hint "Jesteś za daleko!";};
+		if(!(_unit getVariable "civrestrained")) exitWith {hint "Ofiara musi mieć kajdanki!";};
+		if((_unit getVariable "masked")) exitWith {hint "Osoba jest już porwana!";};
 		if(player isEqualTo _unit) exitWith {};
 		if(!isPlayer _unit) exitWith {};
 		if(([false,_item,1]call life_fnc_handleInv)) then
@@ -112,7 +112,15 @@ switch (true) do {
 			[player,"drink"] remoteExec ["life_fnc_say3D",RANY];
 		};
 	};
+        case (_item == "heba"): {
 
+		if(playerSide in [west,independent]) exitWith {hint localize "STR_MISC_WestIndNoNo1";};
+
+		if (([false,_item, 1] call life_fnc_handleInv)) then {
+
+			[] spawn life_fnc_useheba;
+		};
+	};
 	case (EQUAL(_item,"whiskey")): {
 		if(playerSide in [west,independent]) exitWith {hint localize "STR_MISC_WestIndNoNo";};
 		if((player getVariable ["inDrink",FALSE])) exitWith {hint localize "STR_MISC_AlreadyDrinking";};
@@ -141,8 +149,8 @@ switch (true) do {
 
 	case (EQUAL(_item,"cocaine_processed")):
 	{
-		if(playerSide in [west,independent]) exitWith {hint "You can't take drugs on duty!";};
-		if((player getVariable ["Druged",FALSE])) exitWith {hint "Voce ja está na onda!";};
+		if(playerSide in [west,independent]) exitWith {hint "Nie możesz ćpać na służbie!";};
+		if((player getVariable ["Druged",FALSE])) exitWith {hint "Jesteś na haju!";};
 		if(([false,_item,1] call life_fnc_handleInv)) then
 			{
 				if(isNil "life_drug") then {life_drug = 0;};
@@ -154,8 +162,8 @@ switch (true) do {
 
 	case (EQUAL(_item,"heroin_processed")):
 	{
-		if(playerSide in [west,independent]) exitWith {hint "You can't take drugs on duty!";};
-		if((player getVariable ["Druged",FALSE])) exitWith {hint "Voce ja está na onda!";};
+		if(playerSide in [west,independent]) exitWith {hint "Nie możesz ćpać na służbie!";};
+		if((player getVariable ["Druged",FALSE])) exitWith {hint "Jesteś na haju!";};
 		if(([false,_item,1] call life_fnc_handleInv)) then
 			{
 				if(isNil "life_drug") then {life_drug = 0;};

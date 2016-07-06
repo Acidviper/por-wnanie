@@ -24,3 +24,4 @@ StartProgress = true;
 
 if(!isDedicated) exitWith{};
 Tower2 setVariable ["TTP_terror", false, true];
+

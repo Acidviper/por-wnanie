@@ -76,7 +76,7 @@ arrowEmpty="#(argb,8,8,3)color(1,1,1,1)";
 arrowFull="#(argb,8,8,3)color(1,1,1,1)";
 shadow=0;
 colorDisabled[]={1,1,1,0.25};
-border=false;
+border=true;
 borderSize=0;
 
 class ScrollBar

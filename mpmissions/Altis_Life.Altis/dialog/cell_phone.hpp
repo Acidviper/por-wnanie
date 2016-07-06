@@ -40,7 +40,7 @@ class Life_cell_phone {
 		{
 			colorBackground[] = {0, 0, 0, 0};
 			idc = 3001;
-			text = "Undead Brasil Mobile";
+			text = "ALB Mobile";
 			x = 0.1;
 			y = 0.16;
 			w = 0.6;
@@ -69,7 +69,7 @@ class Life_cell_phone {
 
 		class TextMsgButton: Life_RscButtonMenu {
 			idc = 3015;
-			text = "Send Message";
+			text = "Wyślij Wiadomość";
 			onButtonClick = "[] call TON_fnc_cell_textmsg";
 			x = 0.1;
 			y = 0.58;
@@ -89,7 +89,7 @@ class Life_cell_phone {
 
 		class TextCopButton: Life_RscButtonMenu {
 			idc = 3016;
-			text = "Police";
+			text = "Policja";
 			onButtonClick = "[] call TON_fnc_cell_textcop";
 			x = 0.325;
 			y = 0.58;
@@ -146,7 +146,16 @@ class Life_cell_phone {
 			colorText[] = {1,1,1,1};
 			colorBackground[] = {0,0,0,0.6};
 		};
-
+            class TxtPSAButton : life_RscButtonMenu {
+    		    idc = 3023;
+			    text = "$STR_CELL_PSA";
+			    colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+    		    onButtonClick = "[] call TON_fnc_cell_PSA";
+				x = 0.31;
+    		    y = 0.45;
+    		    w = 0.2;
+    		    h = (1 / 25);
+    	    };
 		class CloseButtonKey: Life_RscButtonMenu {
 			idc = -1;
 			text = "$STR_Global_Close";
@@ -159,7 +168,7 @@ class Life_cell_phone {
 
 		class MessagesButtonKey: Life_RscButtonMenu {
 			idc = -1;
-			text = "My Messages";
+			text = "Moje Wiadomości";
 			onButtonClick = "[] spawn life_fnc_messagesMenu";
 			x = 0.1;
 			y = 0.64;

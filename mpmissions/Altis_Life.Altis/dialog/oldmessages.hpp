@@ -9,7 +9,7 @@ class Life_cell_old_msgs {
 		class Life_RscTitleBackground: Life_RscText {
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 			idc = -1;
-			text = "Messages";
+			text = "Wiadomości";
 			x = 0.125;
 			y = 0.13;
 			w = 0.7625;
@@ -28,7 +28,7 @@ class Life_cell_old_msgs {
 		class FromBar: Life_RscText {
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 			idc = -1;
-			text = "From";
+			text = "Od";
 			x = 0.1375;
 			y = 0.2;
 			w = 0.2375;
@@ -38,7 +38,7 @@ class Life_cell_old_msgs {
 		class MessageBar: Life_RscText {
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 			idc = -1;
-			text = "Message";
+			text = "Wiadomość";
 			x = 0.4125;
 			y = 0.2;
 			w = 0.45;
@@ -82,7 +82,7 @@ class Life_cell_old_msgs {
 		
 		class DeleteButton: Life_RscButtonMenu {
 			idc = 98114;
-			text = "Delete";
+			text = "Usuń";
 			colorBackground[] = {0.7, 0, 0, 0.7};
 			onButtonClick = "[] spawn life_fnc_deleteMessage";
 			x = 0.300;
@@ -93,7 +93,7 @@ class Life_cell_old_msgs {
 		
 		class ReplyButton: Life_RscButtonMenu {
 			idc = 98115;
-			text = "Reply";
+			text = "Odpowiedz";
 			colorBackground[] = {0.9,0.5,0.1,1};
 			onButtonClick = "[] spawn life_fnc_replyMessage";
 			x = 0.125;

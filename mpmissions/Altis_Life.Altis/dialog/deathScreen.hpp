@@ -10,7 +10,7 @@ class DeathScreen {
 		class MedicsOnline: Life_RscText {
 			idc = 7304;
 			colorBackground[] = {0,0,0,0};
-			text = "Medics Online: 1";
+			text = "Medycy Online: 1";
 			x = 0.005 * safezoneW + safezoneX;
 			y = 0.015 * safezoneH + safezoneY;
 			w = 0.8;
@@ -20,7 +20,7 @@ class DeathScreen {
 		class MedicsNearby: Life_RscText {
 			idc = 7305;
 			colorBackground[] = {0,0,0,0};
-			text = "Medics Nearby: No";
+			text = "Medycy w pobliżu: No";
 			x = 0.005 * safezoneW + safezoneX;
 			y = 0.040 * safezoneH + safezoneY;
 			w = 0.8;
@@ -46,7 +46,7 @@ class DeathScreen {
 			w = (9 / 40);
 			h = (1 / 25);
 			onButtonClick = "[] call life_fnc_requestMedic;";
-			text = "Request Revive";
+			text = "Wezwij Medyka";
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.7};
 			class Attributes {align = "center";};
 		};

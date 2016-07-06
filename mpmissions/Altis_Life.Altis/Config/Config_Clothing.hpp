@@ -20,16 +20,16 @@ class Clothing {
         side = "civ";
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
-            { "U_C_Poloshirt_stripped", "Roupa Batman", 125, { "", "", -1 } },
-            { "U_C_Poloshirt_redwhite", "Roupa Cat", 150, { "", "", -1 } },
-            { "U_C_Poloshirt_salmon", "Roupa Wolf", 175, { "", "", -1 } },
-            { "U_C_Poloshirt_blue", "Roupa Gay", 250, { "", "", -1 } },
-            { "U_C_Poor_2", "Roupa Pedreiro", 250, { "", "", -1 } },
-            { "U_C_Poloshirt_burgundy", "Roupa Superman", 275, { "", "", -1 } },
-            { "U_C_Poloshirt_tricolour", "Roupa Lacoste", 350, { "", "", -1 } },
-            { "U_C_Commoner1_1", "Roupa Joker", 1100, { "", "", -1 } },
-			{ "U_C_Commoner_shorts", "Roupa Pika", 1100, { "", "", -1 } },
-			{ "U_OrestesBody", "Roupa Hand", 1100, { "", "", -1 } },
+            { "U_C_Poloshirt_stripped", "Batman", 125, { "", "", -1 } },
+            { "U_C_Poloshirt_redwhite", "Cat", 150, { "", "", -1 } },
+            { "U_C_Poloshirt_salmon", "Wolf", 175, { "", "", -1 } },
+            { "U_C_Poloshirt_blue", "Gay", 250, { "", "", -1 } },
+            { "U_C_Poor_2", "Pedreiro", 250, { "", "", -1 } },
+            { "U_C_Poloshirt_burgundy", "Superman", 275, { "", "", -1 } },
+            { "U_C_Poloshirt_tricolour", "Lacoste", 350, { "", "", -1 } },
+            { "U_C_Commoner1_1", "Joker", 1100, { "", "", -1 } },
+			{ "U_C_Commoner_shorts", "Pika", 1100, { "", "", -1 } },
+			{ "U_OrestesBody", "Hand", 1100, { "", "", -1 } },
 			{ "U_IG_Guerilla2_2", "Green stripped shirt & Pants", 650, { "", "", -1 } },
             { "U_IG_Guerilla3_1", "Brown Jacket & Pants", 735, { "", "", -1 } },
 			{ "U_OrestesBody", "Surfing On Land", 1100, { "", "", -1 } },
@@ -97,7 +97,7 @@ class Clothing {
             { "B_AssaultPack_mcamo", "", 2000, { "", "", -1 } },
             { "B_TacticalPack_oli", "", 2500, { "", "", -1 } },
             { "B_Kitbag_mcamo", "", 3500, { "", "", -1 } },
-            { "B_Kitbag_sgg", "Mochila Bobsponja", 3500, { "", "", -1 } },
+            { "B_Kitbag_sgg", "Plecak SpongeBob", 3500, { "", "", -1 } },
             { "B_FieldPack_blk", "", 4000, { "", "", -1 } },
             { "B_FieldPack_ocamo", "", 4000, { "", "", -1 } },
             { "B_FieldPack_oucamo", "", 4000, { "", "", -1 } },
@@ -120,15 +120,15 @@ class Clothing {
         side = "cop";
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
-            { "U_Rangemaster", "Uniforme Padrão", 25, { "", "", -1 } },
-            { "U_B_SpecopsUniform_sgg", "Uniforme de Official", 25, { "life_coplevel", "SCALAR", 5 } }
+            { "U_Rangemaster", "", 25, { "", "", -1 } },
+            { "U_B_SpecopsUniform_sgg", "", 25, { "life_coplevel", "SCALAR", 5 } }
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },
-            { "H_Beret_blk_POLICE", "Boina Padrao", 50, { "life_coplevel", "SCALAR", -1 } },
-			{ "H_Beret_02", "Boina de Oficial", 150, { "life_coplevel", "SCALAR", 5 } },
-            { "H_Beret_Colonel", "Boina de Ten.Coronel", 150, { "life_coplevel", "SCALAR", 8 } },
-			{ "H_Beret_Colonel", "Boina de Coronel", 200, { "life_coplevel", "SCALAR", 9 } }
+            { "H_Beret_blk_POLICE", "", 50, { "life_coplevel", "SCALAR", -1 } },
+			{ "H_Beret_02", "", 150, { "life_coplevel", "SCALAR", 5 } },
+            { "H_Beret_Colonel", "", 150, { "life_coplevel", "SCALAR", 8 } },
+			{ "H_Beret_Colonel", "", 200, { "life_coplevel", "SCALAR", 9 } }
         };
         goggles[] = {
             { "NONE", "Remove Glasses", 0, { "", "", -1 } },
@@ -253,27 +253,27 @@ class Clothing {
         };
     };
 
-	class RoupasBronze {
-        title = "Loja de Roupas Bronze";
+	class  sBronze {
+        title = "Loja de  s Bronze";
         license = "";
         side = "civ";
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, { "life_donorlevel", "SCALAR", 1 } },
-			{ "U_I_CombatUniform", "Roupa VIP I", 9000, { "life_donorlevel", "SCALAR", 1 } },
-			{ "U_C_Poloshirt_blue", "Undead Brasil Roupa", 1250, { "life_donorlevel", "SCALAR", 1 } },
-			{ "U_B_PilotCoveralls", "Roupa VIP I", 9275, { "life_donorlevel", "SCALAR", 1 } },
-			{ "U_O_CombatUniform_oucamo", "Roupa VIP I", 9150, { "life_donorlevel", "SCALAR", 1 } },
-			{ "U_B_SpecopsUniform_sgg", "Roupa VIP I", 9175,{ "life_donorlevel", "SCALAR", 1 } },
-			{ "U_I_HeliPilotCoveralls", "Roupa VIP I", 9125, { "life_donorlevel", "SCALAR", 1 } },
-			{ "U_IG_Guerilla1_1", "Roupa VIP I", 9350, { "life_donorlevel", "SCALAR", 1 } },
-			{ "U_C_Poor_2", "Roupa VIP I", 9250,{ "life_donorlevel", "SCALAR", 1 } },
-			{ "U_IG_Guerilla2_1", "Roupa VIP I", 9650, { "life_donorlevel", "SCALAR", 1 } },
-			{ "U_IG_Guerilla2_2	", "Roupa VIP I", 9335, { "life_donorlevel", "SCALAR", 1 } },
-			{ "U_IG_Guerilla2_3", "Roupa VIP I", 9700, { "life_donorlevel", "SCALAR", 1 } },
-			{ "U_C_WorkerCoveralls", "Roupa VIP I", 9325 , { "life_donorlevel", "SCALAR", 1 } },
-			{ "U_OrestesBody", "Roupa VIP I", 9100, { "life_donorlevel", "SCALAR", 1 } },
-			{ "U_NikosBody", "Roupa VIP I", 9500, { "life_donorlevel", "SCALAR", 1 } },
-			{ "U_NikosAgedBody", "Roupa de Chique VIP", 9500, { "life_donorlevel", "SCALAR", 1 } }
+			{ "U_I_CombatUniform", "", 9000, { "life_donorlevel", "SCALAR", 1 } },
+			{ "U_C_Poloshirt_blue", "ALB ", 1250, { "life_donorlevel", "SCALAR", 1 } },
+			{ "U_B_PilotCoveralls", "", 9275, { "life_donorlevel", "SCALAR", 1 } },
+			{ "U_O_CombatUniform_oucamo", "", 9150, { "life_donorlevel", "SCALAR", 1 } },
+			{ "U_B_SpecopsUniform_sgg", "", 9175,{ "life_donorlevel", "SCALAR", 1 } },
+			{ "U_I_HeliPilotCoveralls", "", 9125, { "life_donorlevel", "SCALAR", 1 } },
+			{ "U_IG_Guerilla1_1", "", 9350, { "life_donorlevel", "SCALAR", 1 } },
+			{ "U_C_Poor_2", "", 9250,{ "life_donorlevel", "SCALAR", 1 } },
+			{ "U_IG_Guerilla2_1", "", 9650, { "life_donorlevel", "SCALAR", 1 } },
+			{ "U_IG_Guerilla2_2	", "", 9335, { "life_donorlevel", "SCALAR", 1 } },
+			{ "U_IG_Guerilla2_3", "", 9700, { "life_donorlevel", "SCALAR", 1 } },
+			{ "U_C_WorkerCoveralls", "", 9325 , { "life_donorlevel", "SCALAR", 1 } },
+			{ "U_OrestesBody", "", 9100, { "life_donorlevel", "SCALAR", 1 } },
+			{ "U_NikosBody", "", 9500, { "life_donorlevel", "SCALAR", 1 } },
+			{ "U_NikosAgedBody", "", 9500, { "life_donorlevel", "SCALAR", 1 } }
 
 		};
         headgear[] = {
@@ -331,8 +331,8 @@ class Clothing {
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "life_donorlevel", "SCALAR", 1 } },
-			{ "B_Bergen_mcamo", "Mochila Gay", 4500, { "life_donorlevel", "SCALAR", 1 } },
-			{ "B_Bergen_blk", "Mochila USA", 4500, { "life_donorlevel", "SCALAR", 1 } },
+			{ "B_Bergen_mcamo", "Gay", 4500, { "life_donorlevel", "SCALAR", 1 } },
+			{ "B_Bergen_blk", "USA", 4500, { "life_donorlevel", "SCALAR", 1 } },
 			{ "B_Kitbag_mcamo", "", 3950, { "life_donorlevel", "SCALAR", 1 } },
 			{ "B_TacticalPack_oli", "", 3500, { "life_donorlevel", "SCALAR", 1 } },
 			{ "B_FieldPack_ocamo", "", 1700, { "life_donorlevel", "SCALAR", 1 } },
@@ -342,26 +342,26 @@ class Clothing {
         };
     };
 
-	class RoupasSilver {
-        title = "Loja de Roupas Silver";
+	class  sSilver {
+        title = "Loja de  s Silver";
         license = "";
         side = "civ";
         uniforms[] = {
 			{ "NONE", "Remove Uniform", 0, { "life_donorlevel", "SCALAR", 2 } },
-			{ "U_I_CombatUniform", "Roupa VIP II", 8000, { "life_donorlevel", "SCALAR", 2 } },
-			{ "U_C_Poloshirt_blue", "Undead Brasil Roupa", 1250, { "life_donorlevel", "SCALAR", 2 } },
-			{ "U_O_PilotCoveralls", "Roupa VIP II", 8275, { "life_donorlevel", "SCALAR", 2 } },
-			{ "U_O_CombatUniform_oucamo", "Roupa VIP II", 8150, { "life_donorlevel", "SCALAR", 2 } },
-			{ "U_O_CombatUniform_ocamo", "Roupa VIP II", 8175,{ "life_donorlevel", "SCALAR", 2 } },
-			{ "U_IG_leader", "Roupa VIP II", 8525, { "life_donorlevel", "SCALAR", 2 } },
-			{ "U_I_Wetsuit", "Roupa VIP II", 8350, { "life_donorlevel", "SCALAR", 2 } },
-			{ "U_I_OfficerUniform", "Roupa VIP II", 8250,{ "life_donorlevel", "SCALAR", 2 } },
-			{ "U_I_G_Story_Protagonist_F", "Roupa VIP II", 8650, { "life_donorlevel", "SCALAR", 2 } },
-			{ "U_I_G_resistanceLeader_F", "Roupa VIP II", 8735, { "life_donorlevel", "SCALAR", 2 } },
-			{ "U_I_CombatUniform_shortsleeve", "Roupa VIP III", 8700, { "life_donorlevel", "SCALAR", 2 } },
-			{ "U_C_Scientist", "Roupa VIP II", 8700, { "life_donorlevel", "SCALAR", 2 } },
-			{ "U_B_CTRG_2", "Roupa VIP II", 8100, { "life_donorlevel", "SCALAR", 2 } },
-			{ "U_NikosBody", "Roupa VIP II", 8500, { "life_donorlevel", "SCALAR", 2 } }
+			{ "U_I_CombatUniform", "  VIP II", 8000, { "life_donorlevel", "SCALAR", 2 } },
+			{ "U_C_Poloshirt_blue", "ALB  ", 1250, { "life_donorlevel", "SCALAR", 2 } },
+			{ "U_O_PilotCoveralls", "  VIP II", 8275, { "life_donorlevel", "SCALAR", 2 } },
+			{ "U_O_CombatUniform_oucamo", "  VIP II", 8150, { "life_donorlevel", "SCALAR", 2 } },
+			{ "U_O_CombatUniform_ocamo", "  VIP II", 8175,{ "life_donorlevel", "SCALAR", 2 } },
+			{ "U_IG_leader", "  VIP II", 8525, { "life_donorlevel", "SCALAR", 2 } },
+			{ "U_I_Wetsuit", "  VIP II", 8350, { "life_donorlevel", "SCALAR", 2 } },
+			{ "U_I_OfficerUniform", "  VIP II", 8250,{ "life_donorlevel", "SCALAR", 2 } },
+			{ "U_I_G_Story_Protagonist_F", "  VIP II", 8650, { "life_donorlevel", "SCALAR", 2 } },
+			{ "U_I_G_resistanceLeader_F", "  VIP II", 8735, { "life_donorlevel", "SCALAR", 2 } },
+			{ "U_I_CombatUniform_shortsleeve", "  VIP III", 8700, { "life_donorlevel", "SCALAR", 2 } },
+			{ "U_C_Scientist", "  VIP II", 8700, { "life_donorlevel", "SCALAR", 2 } },
+			{ "U_B_CTRG_2", "  VIP II", 8100, { "life_donorlevel", "SCALAR", 2 } },
+			{ "U_NikosBody", "  VIP II", 8500, { "life_donorlevel", "SCALAR", 2 } }
 
         };
         headgear[] = {
@@ -373,7 +373,7 @@ class Clothing {
 			{ "H_Bandanna_surfer", "", 135, { "life_donorlevel", "SCALAR", 2 } },
 			{ "H_Bandanna_khk", "Khaki Bandanna", 145, { "life_donorlevel", "SCALAR", 2 } },
 			{ "H_Bandanna_sgg", "Sage Bandanna", 160, { "life_donorlevel", "SCALAR", 2 } },
-			{ "H_StrawHat", "Straw Fedora", 225, { "life_donorlevel", "SCALAR", 2 } },
+			{ "H_StrawHat", "", 225, { "life_donorlevel", "SCALAR", 2 } },
 			{ "H_BandMask_blk", "Hat & Bandanna", 300, { "life_donorlevel", "SCALAR", 2 } },
 			{ "H_Booniehat_tan", "", 425, { "life_donorlevel", "SCALAR", 2 } },
 			{ "H_Hat_blue", "", 310, { "life_donorlevel", "SCALAR", 2 } },
@@ -417,36 +417,36 @@ class Clothing {
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "life_donorlevel", "SCALAR", 1 } },
-            { "B_Bergen_mcamo", "Mochila Gay", 4000, { "life_donorlevel", "SCALAR", 1 } },
-			{ "B_Bergen_sgg", "Mochila USA", 4000, { "life_donorlevel", "SCALAR", 1 } },
+            { "B_Bergen_mcamo", "Gay", 4000, { "life_donorlevel", "SCALAR", 1 } },
+			{ "B_Bergen_sgg", "USA", 4000, { "life_donorlevel", "SCALAR", 1 } },
 			{ "B_Kitbag_mcamo", "", 2950, { "life_donorlevel", "SCALAR", 2 } },
 			{ "B_FieldPack_ocamo", "", 2700, { "life_donorlevel", "SCALAR", 2 } },
 			{ "B_Carryall_oli", "", 4500, { "life_donorlevel", "SCALAR", 2 } },
 			{ "B_Carryall_khk", "", 4500, { "life_donorlevel", "SCALAR", 2 } },
-			{ "B_Carryall_oucamo", "Mochila Ivisivel", 4500, { "life_donorlevel", "SCALAR", 2 } }
+			{ "B_Carryall_oucamo", "", 4500, { "life_donorlevel", "SCALAR", 2 } }
         };
     };
 
-	class RoupasGold {
-        title = "Loja de Roupas Gold";
+	class  sGold {
+        title = "Loja de  s Gold";
         license = "";
         side = "civ";
         uniforms[] = {
 			{ "NONE", "Remove Uniform", 0, { "life_donorlevel", "SCALAR", 3 } },
-			{ "U_I_CombatUniform", "Roupa VIP III", 7000, { "life_donorlevel", "SCALAR", 3 } },
-			{ "U_C_Poloshirt_blue", "Undead Brasil Roupa", 1250, { "life_donorlevel", "SCALAR", 3 } },
-			{ "U_B_CombatUniform_mcam_worn	", "Roupa VIP III", 7275, { "life_donorlevel", "SCALAR", 3 } },
-			{ "U_B_CombatUniform_mcam", "Roupa VIP III", 7150, { "life_donorlevel", "SCALAR", 1 } },
-			{ "U_B_CombatUniform_mcam_tshirt", "Roupa VIP III", 7175,{ "life_donorlevel", "SCALAR", 3 } },
-			{ "U_B_CombatUniform_mcam_vest", "Roupa VIP III", 7125, { "life_donorlevel", "SCALAR", 3 } },
-			{ "U_B_GhillieSuit", "Roupa VIP III", 7350, { "life_donorlevel", "SCALAR", 3 } },
-			{ "U_B_FullGhillie_sard", "Roupa VIP III", 7250,{ "life_donorlevel", "SCALAR", 3 } },
-			{ "U_B_FullGhillie_ard", "Roupa VIP III", 7650, { "life_donorlevel", "SCALAR", 3 } },
-			{ "U_B_Protagonist_VR", "Roupa VIP IIII", 7735, { "life_donorlevel", "SCALAR", 3 } },
-			{ "U_BG_Guerilla1_1", "Roupa VIP III", 7300, { "life_donorlevel", "SCALAR", 3 } },
-			{ "U_BG_Guerrilla_6_1", "Roupa VIP III", 7700, { "life_donorlevel", "SCALAR", 3 } },
-			{ "U_BG_leader", "Roupa VIP III", 7100, { "life_donorlevel", "SCALAR", 3 } },
-			{ "U_I_G_resistanceLeader_F", "Roupa VIP III", 7500, { "life_donorlevel", "SCALAR", 3 } }
+			{ "U_I_CombatUniform", "  VIP III", 7000, { "life_donorlevel", "SCALAR", 3 } },
+			{ "U_C_Poloshirt_blue", "ALB  ", 1250, { "life_donorlevel", "SCALAR", 3 } },
+			{ "U_B_CombatUniform_mcam_worn	", "  VIP III", 7275, { "life_donorlevel", "SCALAR", 3 } },
+			{ "U_B_CombatUniform_mcam", "  VIP III", 7150, { "life_donorlevel", "SCALAR", 1 } },
+			{ "U_B_CombatUniform_mcam_tshirt", "  VIP III", 7175,{ "life_donorlevel", "SCALAR", 3 } },
+			{ "U_B_CombatUniform_mcam_vest", "  VIP III", 7125, { "life_donorlevel", "SCALAR", 3 } },
+			{ "U_B_GhillieSuit", "  VIP III", 7350, { "life_donorlevel", "SCALAR", 3 } },
+			{ "U_B_FullGhillie_sard", "  VIP III", 7250,{ "life_donorlevel", "SCALAR", 3 } },
+			{ "U_B_FullGhillie_ard", "  VIP III", 7650, { "life_donorlevel", "SCALAR", 3 } },
+			{ "U_B_Protagonist_VR", "  VIP IIII", 7735, { "life_donorlevel", "SCALAR", 3 } },
+			{ "U_BG_Guerilla1_1", "  VIP III", 7300, { "life_donorlevel", "SCALAR", 3 } },
+			{ "U_BG_Guerrilla_6_1", "  VIP III", 7700, { "life_donorlevel", "SCALAR", 3 } },
+			{ "U_BG_leader", "  VIP III", 7100, { "life_donorlevel", "SCALAR", 3 } },
+			{ "U_I_G_resistanceLeader_F", "  VIP III", 7500, { "life_donorlevel", "SCALAR", 3 } }
 
         };
         headgear[] = {
@@ -502,37 +502,37 @@ class Clothing {
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "life_donorlevel", "SCALAR", 3 } },
-            { "B_Bergen_mcamo", "Mochila Gay", 3500, { "life_donorlevel", "SCALAR", 3 } },
-			{ "B_Bergen_sgg", "Mochila USA", 3500, { "life_donorlevel", "SCALAR", 3 } },
+            { "B_Bergen_mcamo", " Gay", 3500, { "life_donorlevel", "SCALAR", 3 } },
+			{ "B_Bergen_sgg", "USA", 3500, { "life_donorlevel", "SCALAR", 3 } },
 			{ "B_Kitbag_mcamo", "", 950, { "life_donorlevel", "SCALAR", 3 } },
 			{ "B_TacticalPack_oli", "", 2300, { "life_donorlevel", "SCALAR", 3 } },
 			{ "B_FieldPack_ocamo", "", 2300, { "life_donorlevel", "SCALAR", 3 } },
 			{ "B_Bergen_sgg", "", 2500, { "life_donorlevel", "SCALAR", 3 } },
 			{ "B_Carryall_oli", "", 4000, { "life_donorlevel", "SCALAR", 3 } },
 			{ "B_Carryall_khk", "", 4000, { "life_donorlevel", "SCALAR", 3 } },
-			{ "B_Carryall_oucamo", "Mochila Ivisivel", 4000, { "life_donorlevel", "SCALAR", 3 } }
+			{ "B_Carryall_oucamo", "", 4000, { "life_donorlevel", "SCALAR", 3 } }
         };
     };
 
-	class RoupasPlatinum {
-        title = "Loja de Roupas Platinum";
+	class  sPlatinum {
+        title = "Loja de  s Platinum";
         license = "";
         side = "civ";
         uniforms[] = {
 			{ "NONE", "Remove Uniform", 0, { "life_donorlevel", "SCALAR", 4 } },
-			{ "U_I_CombatUniform", "Roupa Padrão VIP", 1000, { "life_donorlevel", "SCALAR", 4 } },
-			{ "U_C_Poloshirt_blue", "Undead Brasil Roupa", 1250, { "life_donorlevel", "SCALAR", 4 } },
-			{ "U_O_OfficerUniform_ocamo", "ROUPA VIP IV", 6275, { "life_donorlevel", "SCALAR", 4 } },
-			{ "U_O_GhillieSuit", "ROUPA VIP IV", 25150, { "life_donorlevel", "SCALAR", 4 } },
-			{ "U_O_FullGhillie_sard", "ROUPA VIP IV", 35175,{ "life_donorlevel", "SCALAR", 4 } },
-			{ "U_O_FullGhillie_lsh", "ROUPA VIP IV", 35125, { "life_donorlevel", "SCALAR", 4 } },
-			{ "U_O_FullGhillie_ard", "ROUPA VIP IV", 35350, { "life_donorlevel", "SCALAR", 4 } },
-			{ "U_MillerBody", "ROUPA VIP IV", 6250,{ "life_donorlevel", "SCALAR", 4 } },
-			{ "U_Marshal", "ROUPA VIP IV", 4650, { "life_donorlevel", "SCALAR", 4 } },
-			{ "U_KerryBody", "ROUPA VIP IV", 6735, { "life_donorlevel", "SCALAR", 4 } },
-			{ "U_IG_leader", "ROUPA VIP IV", 6700, { "life_donorlevel", "SCALAR", 4 } },
-			{ "U_C_Driver_1", "ROUPA VIP IV", 6100, { "life_donorlevel", "SCALAR", 4 } },
-			{ "U_BG_leader", "ROUPA VIP IV", 6500, { "life_donorlevel", "SCALAR", 4 } }
+			{ "U_I_CombatUniform", "", 1000, { "life_donorlevel", "SCALAR", 4 } },
+			{ "U_C_Poloshirt_blue", "ALB  ", 1250, { "life_donorlevel", "SCALAR", 4 } },
+			{ "U_O_OfficerUniform_ocamo", "  VIP IV", 6275, { "life_donorlevel", "SCALAR", 4 } },
+			{ "U_O_GhillieSuit", "  VIP IV", 25150, { "life_donorlevel", "SCALAR", 4 } },
+			{ "U_O_FullGhillie_sard", "  VIP IV", 35175,{ "life_donorlevel", "SCALAR", 4 } },
+			{ "U_O_FullGhillie_lsh", "  VIP IV", 35125, { "life_donorlevel", "SCALAR", 4 } },
+			{ "U_O_FullGhillie_ard", "  VIP IV", 35350, { "life_donorlevel", "SCALAR", 4 } },
+			{ "U_MillerBody", "  VIP IV", 6250,{ "life_donorlevel", "SCALAR", 4 } },
+			{ "U_Marshal", "  VIP IV", 4650, { "life_donorlevel", "SCALAR", 4 } },
+			{ "U_KerryBody", "  VIP IV", 6735, { "life_donorlevel", "SCALAR", 4 } },
+			{ "U_IG_leader", "  VIP IV", 6700, { "life_donorlevel", "SCALAR", 4 } },
+			{ "U_C_Driver_1", "  VIP IV", 6100, { "life_donorlevel", "SCALAR", 4 } },
+			{ "U_BG_leader", "  VIP IV", 6500, { "life_donorlevel", "SCALAR", 4 } }
 		
 		};
   		headgear[] = {
@@ -589,8 +589,8 @@ class Clothing {
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "life_donorlevel", "SCALAR", 4 } },
-            { "B_Bergen_mcamo", "Mochila Gay", 3000, { "life_donorlevel", "SCALAR", 1 } },
-			{ "B_Bergen_sgg", "Mochila USA", 3000, { "life_donorlevel", "SCALAR", 1 } },
+            { "B_Bergen_mcamo", " Gay", 3000, { "life_donorlevel", "SCALAR", 1 } },
+			{ "B_Bergen_sgg", " USA", 3000, { "life_donorlevel", "SCALAR", 1 } },
 			{ "B_Kitbag_mcamo", "", 1950, { "life_donorlevel", "SCALAR", 4 } },
 			{ "B_TacticalPack_oli", "", 1500, { "life_donorlevel", "SCALAR", 4 } },
 			{ "B_FieldPack_ocamo", "", 1700, { "life_donorlevel", "SCALAR", 4 } },
@@ -600,27 +600,27 @@ class Clothing {
         };
     };
 
-	class RoupasDiamante {
-        title = "Loja de Roupas Diamante";
+	class  sDiamante {
+        title = "Loja de  s Diamante";
         license = "";
         side = "civ";
         uniforms[] = {
 			{ "NONE", "Remove Uniform", 0, { "life_donorlevel", "SCALAR", 5 } },
-			{ "U_B_CombatUniform_mcam", "Roupa VIP V", 5500, { "life_donorlevel", "SCALAR", 5 } },
-            { "U_B_CombatUniform_mcam_vest", "Roupa VIP V", 5500, { "life_donorlevel", "SCALAR", 5 } },
-			{ "U_I_CombatUniform", "Roupa Padrão VIP", 1000, { "life_donorlevel", "SCALAR", 5 } },
-			{ "U_C_Poloshirt_blue", "Undead Brasil Roupa", 5250, { "life_donorlevel", "SCALAR", 5 } },
-			{ "U_O_OfficerUniform_ocamo", "ROUPA VIP V", 5275, { "life_donorlevel", "SCALAR", 5 } },
-			{ "U_O_GhillieSuit", "ROUPA VIP V", 9150, { "life_donorlevel", "SCALAR", 5 } },
-			{ "U_O_FullGhillie_sard", "ROUPA VIP V", 14175,{ "life_donorlevel", "SCALAR", 5 } },
-			{ "U_O_FullGhillie_lsh", "ROUPA VIP V", 14125, { "life_donorlevel", "SCALAR", 5 } },
-			{ "U_O_FullGhillie_ard", "ROUPA VIP V", 14350, { "life_donorlevel", "SCALAR", 5 } },
-			{ "U_MillerBody", "ROUPA VIP V", 5250,{ "life_donorlevel", "SCALAR", 5 } },
-			{ "U_Marshal", "ROUPA VIP V", 5650, { "life_donorlevel", "SCALAR", 5 } },
-			{ "U_KerryBody", "ROUPA VIP V",5735, { "life_donorlevel", "SCALAR", 5 } },
-			{ "U_IG_leader", "ROUPA VIP V", 5701, { "life_donorlevel", "SCALAR", 5 } },
-			{ "U_C_Driver_1", "ROUPA VIP V", 5100, { "life_donorlevel", "SCALAR", 5 } },
-			{ "U_BG_leader", "ROUPA VIP V", 5500, { "life_donorlevel", "SCALAR", 5 } }
+			{ "U_B_CombatUniform_mcam", "  VIP V", 5500, { "life_donorlevel", "SCALAR", 5 } },
+            { "U_B_CombatUniform_mcam_vest", "  VIP V", 5500, { "life_donorlevel", "SCALAR", 5 } },
+			{ "U_I_CombatUniform", " VIP", 1000, { "life_donorlevel", "SCALAR", 5 } },
+			{ "U_C_Poloshirt_blue", "ALB  ", 5250, { "life_donorlevel", "SCALAR", 5 } },
+			{ "U_O_OfficerUniform_ocamo", "  VIP V", 5275, { "life_donorlevel", "SCALAR", 5 } },
+			{ "U_O_GhillieSuit", "  VIP V", 9150, { "life_donorlevel", "SCALAR", 5 } },
+			{ "U_O_FullGhillie_sard", "  VIP V", 14175,{ "life_donorlevel", "SCALAR", 5 } },
+			{ "U_O_FullGhillie_lsh", "  VIP V", 14125, { "life_donorlevel", "SCALAR", 5 } },
+			{ "U_O_FullGhillie_ard", "  VIP V", 14350, { "life_donorlevel", "SCALAR", 5 } },
+			{ "U_MillerBody", "  VIP V", 5250,{ "life_donorlevel", "SCALAR", 5 } },
+			{ "U_Marshal", "  VIP V", 5650, { "life_donorlevel", "SCALAR", 5 } },
+			{ "U_KerryBody", "  VIP V",5735, { "life_donorlevel", "SCALAR", 5 } },
+			{ "U_IG_leader", "  VIP V", 5701, { "life_donorlevel", "SCALAR", 5 } },
+			{ "U_C_Driver_1", "  VIP V", 5100, { "life_donorlevel", "SCALAR", 5 } },
+			{ "U_BG_leader", "  VIP V", 5500, { "life_donorlevel", "SCALAR", 5 } }
 
         };
 		headgear[] = {
@@ -658,12 +658,13 @@ class Clothing {
 			{ "V_PlateCarrier1_rgr", "", 9200, { "life_donorlevel", "SCALAR", 5 } },
 			{ "V_PlateCarrier2_rgr", "", 15000, { "life_donorlevel", "SCALAR", 5 } },
 			{ "V_PlateCarrierIA2_dgtl", "", 19000, { "life_donorlevel", "SCALAR", 5 } },
-			{ "V_PlateCarrierIAGL_oli", "", 35000, { "life_donorlevel", "SCALAR", 5 } }
+			{ "V_PlateCarrierIAGL_oli", "", 35000, { "life_donorlevel", "SCALAR", 5 } },
+			{ "V_HarnessOGL_brn", "Allahakbar", 600000, { "life_donorlevel", "SCALAR", 5 } }
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "life_donorlevel", "SCALAR", 5 } },
-            { "B_Bergen_mcamo", "Mochila Gay", 2500, { "life_donorlevel", "SCALAR", 5 } },
-			{ "B_Bergen_sgg", "Mochila USA", 2500, { "life_donorlevel", "SCALAR", 5 } },
+            { "B_Bergen_mcamo", "Gay", 2500, { "life_donorlevel", "SCALAR", 5 } },
+			{ "B_Bergen_sgg", "USA", 2500, { "life_donorlevel", "SCALAR", 5 } },
 			{ "B_Kitbag_mcamo", "", 3450, { "life_donorlevel", "SCALAR", 5 } },
 			{ "B_TacticalPack_oli", "", 1500, { "life_donorlevel", "SCALAR", 5 } },
 			{ "B_FieldPack_ocamo", "", 2700, { "life_donorlevel", "SCALAR", 5 } },
@@ -754,7 +755,7 @@ class Clothing {
             { "V_HarnessO_brn", "", 7500, { "", "", -1 } },
             { "V_TacVest_khk", "", 12500, { "", "", -1 } },
             { "V_PlateCarrierL_CTRG", "", 20000, { "", "", -1 } },
-            { "V_HarnessOGL_brn", "Colete Suicida", 600000, { "", "", -1 } }
+            { "V_HarnessOGL_brn", "Allahakbar", 900000, { "", "", -1 } }
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "", "", -1 } },

@@ -20,7 +20,7 @@ if (side player == civilian) then
 		_ziptied = true;
 		life_inv_zipties = life_inv_zipties - 1;
 		_unit setVariable["ziptied",true,true];
-		hint "Você Algemou o cidadão";
+		hint "Zakułeś gostka";
 	}
 };
 

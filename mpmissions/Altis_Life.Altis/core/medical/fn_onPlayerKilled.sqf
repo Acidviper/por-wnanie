@@ -73,18 +73,18 @@ _unit spawn
 	disableSerialization;
 	_RespawnBtn = ((findDisplay 7300) displayCtrl 7302);
 	_Timer = ((findDisplay 7300) displayCtrl 7301);
-	_maxTime = time + (life_respawn_timer * 60);
+	_maxTime = time + (life_respawn_timer * 900);
 	_RespawnBtn ctrlEnable false;
-	waitUntil {_Timer ctrlSetText format["Start your new life in: %1",[(_maxTime - time),"MM:SS"] call BIS_fnc_secondsToString];
+	waitUntil {_Timer ctrlSetText format["Nowe życie za: %1",[(_maxTime - time),"MM:SS"] call BIS_fnc_secondsToString];
 	round(_maxTime - time) <= 0 || isNull _this || life_request_timer};
 if (life_request_timer) then {
-_maxTime = time + (life_respawn_timer * 340);
-waitUntil {_Timer ctrlSetText format["Start your new life in: %1",[(_maxTime - time),"MM:SS"] call BIS_fnc_secondsToString];
+_maxTime = time + (life_respawn_timer * 900);
+waitUntil {_Timer ctrlSetText format["Nowe życie za: %1",[(_maxTime - time),"MM:SS"] call BIS_fnc_secondsToString];
 round(_maxTime - time) <= 0 || isNull _this};
 };
 life_request_timer = false;
 	_RespawnBtn ctrlEnable true;
-	_Timer ctrlSetText "You can now start your new life";
+	_Timer ctrlSetText "Możesz zacząć nowe życie";
 };
 [] spawn life_fnc_deathScreen;
 

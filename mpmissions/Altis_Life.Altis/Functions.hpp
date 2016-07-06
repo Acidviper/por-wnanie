@@ -108,7 +108,13 @@ class Life_Client_Core {
 		class vAH_takeBack;
 		class vAH_select;
 	};
-
+       class Ausweis
+    {
+        file = "core\Ausweis";
+        class Lizenzsehen {};
+        class Lizenzzeigen {};
+		class showLicenses {};
+    };
 	class CellPhone {
 		file = "core\cellphone";
 		class cellPhoneCheck {};
@@ -138,13 +144,21 @@ class Life_Client_Core {
 			class slotmachine {};
   };
 
-	class Admin {
+	class Admin
+	{
 		file = "core\admin";
-		class adminid {};
 		class admininfo {};
+		class adminid {};
+		class admingetID {};
 		class adminMenu {};
 		class adminQuery {};
+		class adminSpectate {};
 		class adminTeleport {};
+		class adminTpHere {};
+		class adminCompensate {};
+		class adminGodMode {};
+		class adminFreeze {};
+		class adminMarkers {};
 	};
 
 	class Civilian {
@@ -187,6 +201,7 @@ class Life_Client_Core {
 		class drinkmoonshine {};
 		class weed {};
 		class addicted {};
+		class useheba {};
 	};
 
 	class gas
@@ -274,7 +289,16 @@ class Life_Client_Core {
 		class wireTransfer {};
 		class insureCar{};
 	};
-
+    class DynMarket
+    {
+        file = "core\DynMarket";
+        class bought {};
+        class update {};
+        class DisplayPrices {};
+        class LoadIntoListbox {};
+        class ForcePrice {};
+        class DYNMARKET_getPrice {};
+    };
 	class Functions	{
 		file = "core\functions";
 		class accType {};
@@ -500,5 +524,17 @@ class Life_Client_Core {
 		class vehStoreItem {};
 		class vehTakeItem {};
 		class vInteractionMenu {};
+	};
+	
+	 class Emp
+	{
+		file = "core\emp";
+		class openEmpMenu {};
+		class isEmpOperator {};
+		class scanVehicles {};
+		class warnVehicle {};
+		class empVehicle {};
+		class vehicleWarned {};
+		class vehicleEmpd {};
 	};
 };

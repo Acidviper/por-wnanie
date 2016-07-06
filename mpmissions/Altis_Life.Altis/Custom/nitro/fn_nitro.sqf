@@ -1,9 +1,9 @@
 _unit = cursorTarget;
-if (count (_unit getVariable ["vehicle_info_owners", []]) < 1 || !(_unit isKindOf "Car")) exitWith {hint "You cannot put nitro on this vehicle!";};
+if (count (_unit getVariable ["vehicle_info_owners", []]) < 1 || !(_unit isKindOf "Car")) exitWith {hint "Nie można umieścić w tym pojeździe nitro!";};
 if (vehicle player != player) exitWith {};
 if (!([false,"nitro",1] call life_fnc_handleInv)) exitWith {};
 life_action_inUse = true;
-_upp = "Attaching the nitro injector...";
+_upp = "Montowanie wtryskiwacza nitro...";
 disableSerialization;
 5 cutRsc ["life_progress","PLAIN"];
 _ui = uiNameSpace getVariable "life_progress";
@@ -29,5 +29,5 @@ life_action_inUse = false;
 if (_success) then
 {
 	_unit setVariable["nitro",4,true];
-	hint "Nitro injector has been added to this vehicle, you have 4 injections. Press SHIFT + N when driving to activate!";
+	hint "Nitro wtryskiwacz został zamontowany, masz 4 sztuki. Naciśnij SHIFT + N podczas jazdy!";
 };

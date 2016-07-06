@@ -89,7 +89,7 @@ if((_curTarget GVAR ["restrained",false]) && (life_inv_lockpick > 0)) then
 };
 
 //Button 5 - undefined
-_Btn5 ctrlSetText "Tortura";
+_Btn5 ctrlSetText "Tortury";
 _Btn5 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_torture; closeDialog 0;";
 
 if (life_inv_pliers > 0) then
@@ -99,7 +99,7 @@ if (life_inv_pliers > 0) then
     _Btn5 ctrlEnable false;
 };
 //Button 6 - undefined
-_Btn6 ctrlSetText "Retirar Órgãos";
+_Btn6 ctrlSetText "Usuń nerkę";
 _Btn6 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_takeOrgans; closeDialog 0;";
 
 if(life_inv_knife > 0) then

@@ -32,7 +32,7 @@ waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done
 
 switch (FETCH_CONST(life_coplevel)) do
 {
-		case 1: { life_paycheck = life_paycheck + 350; }; //Level 1
+	case 1: { life_paycheck = life_paycheck + 3500; }; //Level 1
     case 2: { life_paycheck = life_paycheck + 4000; }; //Level 2
     case 3: { life_paycheck = life_paycheck + 6000; }; //Level 3
     case 4: { life_paycheck = life_paycheck + 8000; }; //Level 4

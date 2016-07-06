@@ -36,6 +36,7 @@ life_action_gathering = false;
 tawvd_addon_disable = true;
 life_god = false;
 life_frozen = false;
+life_markers = false;
 life_save_gear = [];
 life_container_activeObj = ObjNull;
 life_disable_getIn = false;
@@ -57,7 +58,7 @@ life_isSuicide = false;
 masked = false;
 life_request_timer = false;
 
-life_respawn_timer = 0.5;
+life_respawn_timer = 0.3;
 
 CHVD_allowNoGrass = true;
 CHVD_maxView = 4000;

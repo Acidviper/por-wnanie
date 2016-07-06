@@ -12,10 +12,10 @@ _unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(_unit getVariable "restrained" || _unit getVariable "Escorting" || _unit getVariable "zipTie") exitWith {};
 if(!(_unit getVariable ["surrender",false]) && !(animationState _unit == "Incapacitated") && !(_unit getVariable ["tazed",false])) exitWith {};
 if(isNull _unit) exitWith {};
-if(player == unit) exitWith { hint "You can't zip tie yourself!";};
-if(life_inv_zipties == 0) exitWith { hint "You don't have any zip ties!";};
-if(player getVariable ["restrained",false] || player getVariable ["zipTie",false] || player getVariable ["surrender",false]) exitWith { hint "You cannot zip tie someone while restrained!";};
-if(player distance _unit > 4) exitWith { hint "You are too far away from them!";};
+if(player == unit) exitWith { hint "Nie możesz się skuć!";};
+if(life_inv_zipties == 0) exitWith { hint "Nie masz zippów!";};
+if(player getVariable ["restrained",false] || player getVariable ["zipTie",false] || player getVariable ["surrender",false]) exitWith { hint "Nie możesz skuć skutego!";};
+if(player distance _unit > 4) exitWith { hint "Jesteś zbyt daleko!";};
 
 //Monitor excessive restrainment
 [] spawn {

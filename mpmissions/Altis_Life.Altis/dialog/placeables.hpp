@@ -33,7 +33,7 @@ class Life_Cop_Placeables {
             colorBackground[] = {0, 0, 0, 0};
             idc = -1;
 
-            text = "Roadblock Menu";
+            text = "Menu Barierek";
             x = 0.1;
             y = 0.2;
             w = 0.6;
@@ -64,7 +64,7 @@ class Life_Cop_Placeables {
         class RemoveAll : life_RscButtonMenu {
             idc = -1;
 
-            text = "Remove all your barriers";
+            text = "Usuń wszystkie barierki";
             onButtonClick = "[] call life_fnc_placeablesRemoveAll";
             x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
             y = 0.8 - (1 / 25);
@@ -76,7 +76,7 @@ class Life_Cop_Placeables {
             idc = -1;
 
 
-            text = "Place";
+            text = "Ustaw";
             colorBackground[] = {0,0.6,0.298,0.5};
             onButtonClick = "[] spawn life_fnc_placeablePlace;";
             x = 0.32;

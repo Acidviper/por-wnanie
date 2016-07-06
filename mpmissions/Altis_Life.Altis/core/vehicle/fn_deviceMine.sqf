@@ -78,7 +78,7 @@ if(_zone isEqualTo "") exitWith {
 };
 
 _vehicle SVAR ["mining",true,true]; //Lock the device
-_vehicle remoteExec ["life_fnc_soundDevice",RCLIENT]; //Broadcast the 'mining' sound of the device for nearby units.
+_vehicle remoteExec ["life_fnc_soundDevice",RCLIENT]; //Broadcast the 'mining' sound of the device for Acid nearby units.
 
 life_action_inUse = false; //Unlock it since it's going to do it's own thing...
 

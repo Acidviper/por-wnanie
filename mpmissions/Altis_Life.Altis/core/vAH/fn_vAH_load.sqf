@@ -18,7 +18,7 @@ _search = [_this,0,"",[""]] call BIS_fnc_param;
 	{_found = _x select 3 select 1 find _search; if (_found != -1) then {_allAH pushBack _x};} forEach all_ah_items;
 	};
 if (count all_ah_items isEqualTo 0) then {
-		_myListbox lbAdd format ["There are no items on the Auction House at the moment"];
+		_myListbox lbAdd format ["Nie ma przedmiotów na aukcji"];
 		_myListbox lbSetData [(lbSize _myListbox)-1,format ["%1",["none"]]];
 	} else {
 {

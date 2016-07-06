@@ -113,7 +113,7 @@ _price = 0;
 
 _index = -1;
 if (count playerInventoryArray isEqualTo 1) then {
-		_myInvListbox lbAdd format ["You have no items in your inventory or auction house!"];
+		_myInvListbox lbAdd format ["Nie masz nic na aukcję!"];
 	} else {
 {
 	_status = [_x,2,3,[3]] call BIS_fnc_param;

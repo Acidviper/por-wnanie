@@ -81,15 +81,15 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
 						_x GVAR ["realname",name _x],
 						
 						switch ((_x GVAR "rank")) do {
-						case 1: {"Recruta"};
-						case 2: {"Soldado"};
-						case 3: {"Cabo"};
-						case 4: {"Sargento"};
-						case 5: {"Tenente"};
-						case 6: {"Capitão"};
+						case 1: {"Rekrut"};
+						case 2: {"Kadet"};
+						case 3: {"Posterunkowy"};
+						case 4: {"Sierżant"};
+						case 5: {"Pułkownik"};
+						case 6: {"Kapitan"};
 						case 7: {"Major"};
-						case 8: {"Tenente Coronel"};
-						case 9: {"Coronel"};
+						case 8: {"Zast. Komendanta"};
+						case 9: {"Komendant"};
 						
 						default {"Cop In Training"};
 					}]};

@@ -52,11 +52,11 @@ _fnc_water = {
 			waitUntil {(life_drug > 0)};
 			while{(life_drug > 0)} do {
 
-			if(life_drug > 0.08) then
+			if(life_drug > 0.11) then
 			{
 				sleep 60;
 				[] spawn life_fnc_addicted;
-				hint "You should find a medical personell, you don't feel too good.";
+				hint "Znajdź personel medyczny, bo może być tylko gorzej .";
 				sleep 240;
 			};
 		};
@@ -76,8 +76,8 @@ _slotNormal = 115;
 
 for "_i" from 0 to 1 step 0 do {
 	/* Thirst / Hunger adjustment that is time based */
-	if((time - _waterTime) > 850) then {[] call _fnc_water; _waterTime = time;};
-	if((time - _foodTime) > 1050) then {[] call _fnc_food; _foodTime = time;};
+	if((time - _waterTime) > 650) then {[] call _fnc_water; _waterTime = time;};
+	if((time - _foodTime) > 950) then {[] call _fnc_food; _foodTime = time;};
 
 	/* Adjustment of carrying capacity based on backpack changes */
 	if(EQUAL(backpack player,"")) then {

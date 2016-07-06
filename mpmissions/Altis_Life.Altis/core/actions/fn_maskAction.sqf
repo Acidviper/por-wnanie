@@ -9,4 +9,4 @@ params [
 
 _unit setVariable["masked",true,true];
 [player] remoteExecCall ["life_fnc_masked",_unit];
-hint "Saco de sequestro colocado a vítima nao consegue ver nada.";
+hint "Worek na głoę ofiara nic nie widzi.";

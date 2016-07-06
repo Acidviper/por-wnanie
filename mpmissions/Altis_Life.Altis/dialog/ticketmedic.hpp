@@ -30,7 +30,7 @@ class Life_ticket_givemedic
 		class Title : Life_RscTitle {
 			colorBackground[] = {0, 0, 0, 0};
 			idc = 2651;
-			text = "Rechnung";
+			text = "Rachunek";
 			x = 0.3;
 			y = 0.2;
 			w = 0.6;

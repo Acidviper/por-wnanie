@@ -10,14 +10,14 @@ disableSerialization;
 player playMoveNow "";
 
 _moves = [
-    ["Kung Fu","AmovPercMstpSnonWnonDnon_exerciseKata"],
-	["Push Ups","AmovPercMstpSnonWnonDnon_exercisePushup"],
-	["Knee Bends (Fast)","AmovPercMstpSnonWnonDnon_exercisekneeBendB"],
+    ["Bruce Lee","AmovPercMstpSnonWnonDnon_exerciseKata"],
+	["Pompki","AmovPercMstpSnonWnonDnon_exercisePushup"],
+	["Przysiady (Fast)","AmovPercMstpSnonWnonDnon_exercisekneeBendB"],
 	["Knee Bends (Normal)","AmovPercMstpSnonWnonDnon_exercisekneeBendA"],
-	["Scared","AmovPercMstpSnonWnonDnon_Scared"],
-	["Take a Piss","Acts_AidlPercMstpSlowWrflDnon_pissing"],
-	["Drunk Walk","AcinPercMstpSnonWnonDnon_agony"],
-	["Pew","Acts_starterPistol_out"]
+	["Wystraszony","AmovPercMstpSnonWnonDnon_Scared"],
+	["Siusiu","Acts_AidlPercMstpSlowWrflDnon_pissing"],
+	//["Pijak","AcinPercMstpSnonWnonDnon_agony"],
+	["Hm","Acts_starterPistol_out"]
 	];
 
 waitUntil {!isNull (findDisplay 2900)};

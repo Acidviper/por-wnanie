@@ -18,7 +18,7 @@ _found = "";
 	}
 } foreach playableUnits;
 
-if(_found isEqualTo "") exitWith { hint "This person is not online at the moment!"};
+if(_found isEqualTo "") exitWith { hint "Ta osoba nie jest w tej chwili online!"};
 
 closeDialog 0;
 

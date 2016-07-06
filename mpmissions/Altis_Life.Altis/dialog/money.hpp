@@ -78,7 +78,7 @@ onLoad = "[] spawn life_fnc_money";
     {
     	idc = -1;
       shortcuts[] = {0x00050000 + 2};
-      tooltip = "Return to Main Menu";
+      tooltip = "Powrót do menu";
       onButtonClick = "closeDialog 0;";
     	x = 0.3875;
     	y = 0.94;
@@ -89,7 +89,7 @@ onLoad = "[] spawn life_fnc_money";
     {
     	idc = -1;
       onButtonClick = "[] call life_fnc_giveMoney";
-			tooltip = "Give Money to selected Player";
+			tooltip = "Daj pieniądze";
     	x = 0.45;
     	y = 0.82;
     	w = 0.125;

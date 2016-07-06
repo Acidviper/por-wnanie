@@ -27,7 +27,7 @@ CUP_checkDrop =
   _return
 };
 
-player addAction ["<t color='#C9C900'>Lift vehicle</t>", "Custom\lift\lift.sqf", nil, 10, true, true, "", "call CUP_checkLift"];
-player addAction ["<t color='#C9C900'>Drop vehicle</t>", "Custom\lift\drop.sqf", nil, 10, true, true, "", "call CUP_checkDrop"];
+player addAction ["<t color='#C9C900'>Podnieś pojazd</t>", "Custom\lift\lift.sqf", nil, 10, true, true, "", "call CUP_checkLift"];
+player addAction ["<t color='#C9C900'>Opuść pojazd</t>", "Custom\lift\drop.sqf", nil, 10, true, true, "", "call CUP_checkDrop"];
 
-player addEventHandler ["Respawn", {player addAction ["<t color='#C9C900'>Lift vehicle</t>", "Custom\lift\lift.sqf", nil, 10, true, true, "", "call CUP_checkLift"]; player addAction ["<t color='#C9C900'>Drop vehicle</t>", "Custom\lift\drop.sqf", nil, 10, true, true, "", "call CUP_checkDrop"];}];
+player addEventHandler ["Respawn", {player addAction ["<t color='#C9C900'>Podnieś pojazd</t>", "Custom\lift\lift.sqf", nil, 10, true, true, "", "call CUP_checkLift"]; player addAction ["<t color='#C9C900'>Drop vehicle</t>", "Custom\lift\drop.sqf", nil, 10, true, true, "", "call CUP_checkDrop"];}];

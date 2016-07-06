@@ -17,7 +17,7 @@ if(!isPlayer _unit) exitWith {};
 
 if(life_inv_zipties < 1) then
 {
-    hint "You have no zip ties";
+    hint "Nie masz Zippów";
 } else {
     life_inv_zipties = life_inv_zipties - 1;
     //Broadcast!

@@ -2,9 +2,9 @@
 private["_unit"];
 _unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _unit) exitWith {};
-if(life_inv_gpsTracker isEqualTo 0) exitWith {hint "You need a GPS Tracker."};
-if(!(_unit isKindOf "AllVehicles")) exitWith {hint "You cannot add a GPS tracker on a car"};
-if(player distance _unit > 7) exitWith {hint "You have to be closer"};
+if(life_inv_gpsTracker isEqualTo 0) exitWith {hint "Potrzebujesz GPS."};
+if(!(_unit isKindOf "AllVehicles")) exitWith {hint "Nie możesz dodać trasy w samochodzie"};
+if(player distance _unit > 7) exitWith {hint "Musisz być bliżej"};
 if(!([false,"gpstracker",1] call life_fnc_handleInv)) exitWith {};
 closeDialog 0;
 
@@ -12,7 +12,7 @@ life_action_inUse = true;
 player playMove "AinvPknlMstpSnonWnonDnon_medic_1";
 uiSleep 4;
 life_action_inUse = false;
-if(player distance _unit > 7) exitWith {titleText["You are too far away!","PLAIN"];};
+if(player distance _unit > 7) exitWith {titleText["Jesteś za daleko!","PLAIN"];};
 titleText["You have placed the GPS Tracker","PLAIN"];
 
 [_unit] spawn {
